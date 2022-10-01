@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        .my-life-h2{
-            color: red
-        }
-        .my-life-p{
-            color: darkgreen
-        }
-    </style>
-
     <link rel="stylesheet" href="main.css">
     <title>Bryan's Website</title>
 </head>
 <body>
-    <h1>Hello! I'm Bryan</h1>
+    <header class="title-section">
+        <h1 class="title-h1">Hello! I'm <span class="name-bold"b>Bryan Sukidi.</span></h1>
+        <p class="title-p">I'm a 16-year-old student and I love <span class="auto-type name-bold"></span></p>
+        <ul class="title-nav-button-list">
+            <li class="nav-button">About Me</li>
+            <li class="nav-button">My Portfolio</li>
+            <li class="nav-button">Contact Me</li>
+        </ul>
+
+        
+    </header>
 
     <section>
-        <h2 class="about-me-h2" style="color: black">About Me</h2>
-        <p style="color: darkgray">Inline styling.</p>
+        <h2 class="about-me-h2">About Me</h2>
+        <p>Inline styling.</p>
     </section>
 
     <section>
@@ -35,8 +35,20 @@
     </section>
     <h2 class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut porro sed ducimus sit dolorem natus! Ex sunt ea cum.</h2>
 
-    <p style="color: blue">This is an example of a <strong>strong</strong> element.</p>
+    <p>This is an example of a <strong>strong</strong> element.</p>
     <a href="https://milton.schoology.com/course/6085404891/materials/link/view/6298245253">Link</a>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["programming.", "playing guitar and drums.", "creating crosswords.", "playing volleyball.", "spending time with my sister."],
+            typeSpeed: 50,
+            backSpeed: 40,
+            backDelay: 2000, 
+            loop: true
+        });
+
+    </script>
 </body>
 </html>
