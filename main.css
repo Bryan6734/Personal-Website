@@ -29,7 +29,7 @@ header{
 }
 
 p{
-    color: --primary;
+    color: var(--primary);
 }
 
 hr {
@@ -59,12 +59,12 @@ hr {
     font-weight: 400;
 }
 
-.title-nav-button-list{
+.title-section nav{
     position: relative;
-    padding: 25px 0px 25px 0px;
+    padding: 10px 0px 25px 0px;
 }
 
-.nav-button{
+.title-section button {
     position: relative;
     display: inline;
     /* background-color: var(--secondary); */
@@ -72,6 +72,13 @@ hr {
     border-radius: 10px;
     padding: 10px 20px;
     margin-right: 1.5vw;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.title-section button:hover {
+    cursor: pointer;
+    background-color: var(--quarternary);
 }
 
 .title-img{
@@ -87,41 +94,32 @@ hr {
 
 }
 
-.about-me-section p{
-
-    font-weight: 200;
-    color: var(--primary);
-    padding-right: 50vh;
-    font-size: 1.5rem;
-
-}
-
-.about-me-section .container img{
-
-    font-size: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
-    padding-left: 0;
-}
-
 .about-me-section span{
     color: var(--secondary);
 }
 
-.about-me-section img{
-    width: 25vw;
-    margin-left: 15vh;
-    translate: 75vh;
+.about-me-section .container {
+    display: flex;
 }
 
+.about-me-section .text-col {
+    font-weight: 200;
+    color: var(--primary);
+    padding-right: 5vw;
+    font-size: 1.5rem;
+}
+
+.about-me-section .container img{
+    width: 25vw;
+    min-width: 20vw;
+}
+/*  */
 .section-header{
     color: var(--primary);
     font-size: 40px;
 }
 
 .parallax{
-
     margin-bottom: 30px;
     width: 100%;
     background-image: url("unionsquare.jpeg");
