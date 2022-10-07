@@ -10,6 +10,7 @@ BACKGROUND #1c1c1e
 
 */
 
+
 :root {
     --background: #1c1c1e;
     --primary: #f0f0f0;
@@ -31,6 +32,11 @@ header{
 p{
     color: var(--primary);
 }
+
+a:link{
+    text-decoration: none;
+}
+
 
 hr {
     width: 100%;
