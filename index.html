@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Bryan's Website</title>
+
 </head>
 <body>
     <header class="title-section">
-        <hr>
-        <h1 class="title-h1">Hello! I'm <span class="name-bold"b>Bryan Sukidi.</span></h1>
-        <p class="title-p">I'm a 17-year-old student and I love <span class="auto-type name-bold"></span></p>
-        
-        <nav>
-            <button>About Me</button>
-            <a href="portfolio.html">
-                <button>My Portfolio</button>
-            </a>
-
-            <a href="contact_me.html">
-                <button>Contact Me</button>
-            </a>
-        </nav>
-
+        <div class="title-container">
+            <hr>
+            <h1 class="title-h1">Hello! I'm <span class="name-bold">Bryan Sukidi.</span></h1>
+            <p class="title-p">I'm a 17-year-old student and I love <span class="auto-type"></span></p>
+            <nav>
+                <button>About Me</button>
+                <a href="portfolio.html">
+                    <button>My Portfolio</button>
+                </a>
+                <a href="contact_me.html">
+                    <button>Contact Me</button>
+                </a>
+            </nav>
+        </div>
     </header>
+    
+    
 
     <div class="parallax"></div>
 
@@ -40,18 +42,26 @@
 
             <div class="img-col">
                 <img src="assets/IMG-6035.PNG" alt="">
-
             </div>
         </div>
 
-
-    <head></head>
-
     </section>
 
-    <section class="portfolio-section">
-
+    <!-- <section class="photo-gallery-section">
+        <hr>
+        <h1 class="section-header">Photo Gallery</h1>
+        <p class="text-col">Scroll to see pictures of my life.</p>
     </section>
+
+    <div class="image-track" id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false" />
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+        <img class="image" src="assets/IMG_2300.jpeg" draggable="false"/>
+    </div> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -71,5 +81,6 @@
             loop: true
         });
     </script>
+    <script src="index.js"></script>
 </body>
 </html>
