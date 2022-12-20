@@ -68,7 +68,7 @@ span {
 
 .title-section {
     height: 100vh;
-    min-height: 600px;
+    min-height: 670px;
     margin-left: 15vw;
     margin-right: 15vw;
 }
@@ -108,7 +108,7 @@ span {
     background-color: var(--quarternary);
 }
 
-.about-me-section, .photo-gallery-section{
+.about-me-section{
     padding: 0 15vw 0 15vw;
     margin-top: 30px;
 }
@@ -117,14 +117,14 @@ span {
     display: flex;
 }
 
-.about-me-section .text-col, .photo-gallery-section .text-col {
+.about-me-section .container .text-col{
     font-weight: 200;
     color: var(--primary);
     padding-right: 5vw;
     font-size: 1.5rem;
 }
 
-.about-me-section .container img{
+.about-me-section img{
     width: 25vw;
     min-width: 20vw;
 }
@@ -135,7 +135,7 @@ span {
 }
 
 .parallax{
-    border: 1px white dotted;
+
     width: 100vw;
     background-image: url("assets/unionsquare.jpeg");
     min-height: 350px;
@@ -144,6 +144,103 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+@media screen and (min-width: 280px) and (max-width: 819px) {
+     /* CSS rules for smartphones with screens between 320px and 359px wide, such as the iPhone 6 and 6S */ 
+
+     .about-me-section{
+    padding: 0 8vw 0 8vw;
+    margin-top: 30px;
+    }
+
+    .title-section button {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        outline: 2px solid var(--secondary);    
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-right: 1.5vw;
+        margin-top: 5vw;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .title-section {
+    height: 100vh;
+    min-height: 670px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    }
+
+     .title-container {
+        padding-top: 20vh;
+    }
+     .title-h1{
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-section .container .text-col{
+    font-weight: 200;
+    color: var(--primary);
+    font-size: 1.2rem;
+    }
+
+    .about-me-section .container img {
+        width: 85vw;
+        object-fit: cover;
+
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 900px){
+    .title-h1{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    .title-p{
+        font-size: 40px;
+    }
+
+    .title-section button {
+        position: relative;
+        display: inline;
+        outline: 2px solid var(--secondary);
+        border-radius: 10px;
+        padding: 25px 20px;
+        margin-right: 1.5vw;
+        margin-top: 20px;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+
+    .about-me-section .container .text-col {
+        font-size: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-me-section .container img {
+        width: 70vw;
+        object-fit: cover;
+    }
+
+}
+
+
 
 
 /* .image-track {
