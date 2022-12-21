@@ -6,6 +6,7 @@
     --secondary: #7ba2cc;
     --tertiary: #989899;
     --quarternary: #5a5a5e;
+
   }
 
 /* Styling applied to all elements */
@@ -134,7 +135,7 @@ section h1 {
 
 .about-me-container {
     display: flex;
-    padding: 0 5vw 0;
+    padding: 0 5vw 5vh;
     gap: 5vw;
 }
 
@@ -172,10 +173,18 @@ footer p {
     background-color: var(--background-darker);
     color: var(--quarternary);
     text-align: center;
-
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: all 1s;
+}
 
+.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
 
 
 
