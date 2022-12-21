@@ -1,16 +1,5 @@
-/* 
 
-WHITE (label 1) #ffffff
-LIGHTER SHADE GRAY (label 2) #989899
-MID SHADE GRAY (label 3) #5a5a5e
-    --BLUE: #7ba2cc;
-DARKER SHADE GRAY (label 4) #404044
-
-BACKGROUND #1c1c1e
-
-*/
-
-
+/* Styling color variables */
 :root {
     --background: #1c1c1e;
     --primary: #f0f0f0;
@@ -19,232 +8,196 @@ BACKGROUND #1c1c1e
     --quarternary: #5a5a5e;
   }
 
+/* Styling applied to all elements */
 *{
     background-color: var(--background);
     color: var(--primary);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-tap-highlight-color: transparent;
+
 }
 
+/* Styling applied to html page (smooth scrolling) */
 html {
     scroll-behavior: smooth;
 }
 
+/* Styling for all visible elements for dimensions and no horizontal scrolling */
 body {
     height: 100vh;
     width: 100vw;
-    margin: 0rem;
-    overflow-x: hidden;
-
-}
-
-
-header{
-    /* padding: 30vh 15vw 35vh 15vw; */
     margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
+/* Colors all paragraph text white */
 p{
     color: var(--primary);
 }
 
+/* Button links with disabled underlined text */
 a:link{
     text-decoration: none;
 }
 
-
+/* Creates blue accent lines for all <hr> elements */
 hr {
-    width: 100%;
-    height: 5px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--secondary);
-    border: 0 none;
-    margin-top: 0px;
+    margin: 0;
+    height: 5px;
+    border: none;
+    position: relative;
+
   }
 
+/* Colors all emphasized text with blue. */
 span {
     color: var(--secondary);
 }
 
-.title-section {
+/* Parent header for landing page with size of viewport */
+header {
     height: 100vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
     min-height: 670px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+
 }
 
-/* For centering WITHIN the title-section section. */
-.title-container {
-    padding-top: 25vh;
+/* Container for content in the header w/ inherited styling. Sets default width.*/
+header .content-container {
+    width: 70vw;
 }
 
-.title-h1{
+header .name {
     font-size: 60px;
     letter-spacing: 1px;
 }
 
-.title-p{
-    font-size: 30px;
+header .bio {
+    font-size: 2rem;
+    line-height: 40px;
     font-weight: 400;
+    min-height: 75px;
 }
 
-.title-section nav{
-    position: relative;
+header .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
+    gap: 20px;
 }
 
-.title-section button {
-    position: relative;
-    display: inline;
+header button {
+    display: flex;
     outline: 2px solid var(--secondary);
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-right: 1.5vw;
-    font-size: 20px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1.25rem;
+    font-weight: 400;
     transition: 0.3s;
 }
 
-.title-section button:hover {
+header button:hover {
     cursor: pointer;
     background-color: var(--quarternary);
 }
 
-.about-me-section{
-    padding: 0 15vw 0 15vw;
-    margin-top: 30px;
-}
-
-.about-me-section .container {
-    display: flex;
-}
-
-.about-me-section .container .text-col{
-    font-weight: 200;
-    color: var(--primary);
-    padding-right: 5vw;
-    font-size: 1.5rem;
-}
-
-.about-me-section img{
-    width: 25vw;
-    min-width: 20vw;
-}
-/*  */
-.section-header{
-    color: var(--primary);
-    font-size: 40px;
-}
-
+/* Styling for Union Square parallax image */
 .parallax{
-
     width: 100vw;
     background-image: url("assets/unionsquare.jpeg");
-    min-height: 350px;
+    height: 350px;
     background-attachment: fixed;
     background-position: center 0%;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
-
-@media screen and (min-width: 280px) and (max-width: 819px) {
-     /* CSS rules for smartphones with screens between 320px and 359px wide, such as the iPhone 6 and 6S */ 
-
-     .about-me-section{
-    padding: 0 8vw 0 8vw;
+/* Default styling for all section elements */
+section {
+    /* padding: 0 15vw 0; */
     margin-top: 30px;
-    }
+}
 
-    .title-section button {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-        outline: 2px solid var(--secondary);    
-        border-radius: 10px;
-        padding: 10px 20px;
-        margin-right: 1.5vw;
-        margin-top: 5vw;
-        font-size: 20px;
-        transition: 0.3s;
-    }
-
-
-    .title-section {
-    height: 100vh;
-    min-height: 670px;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    }
-
-     .title-container {
-        padding-top: 20vh;
-    }
-     .title-h1{
-        font-size: 45px;
-        letter-spacing: 1px;
-    }
-
- 
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-me-section .container .text-col{
-    font-weight: 200;
+/* Default styling for all section h1s */
+section h1 {
     color: var(--primary);
-    font-size: 1.2rem;
-    }
-
-    .about-me-section .container img {
-        width: 85vw;
-        object-fit: cover;
-
-    }
+    font-size: 2.5rem;
 }
 
-@media screen and (min-width: 820px) and (max-width: 900px){
-    .title-h1{
-        font-size: 40px;
-        letter-spacing: 1px;
+
+.about-me-container {
+    display: flex;
+    padding: 0 5vw 0;
+    gap: 5vw;
+}
+
+/* Font size for text */
+.about-me-text-container {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* Alignment for image of Bryan on the left */
+.about-me-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Sizing for image of Bryan on the left + object-fit */
+.about-me-img-container img {
+    width: 25vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 709px){
+
+    /* Adjusting minimum height for landing page */
+    header {
+        min-height: 885px;
     }
 
-    .title-p{
-        font-size: 40px;
+    /* Adjusting typing boundaries for landing page */
+    header .bio {
+        max-width: 100%;
+        min-height: 200px;
+        max-height: 300px;
+        overflow: scroll;
+        text-overflow: ellipsis;
     }
 
-    .title-section button {
-        position: relative;
-        display: inline;
-        outline: 2px solid var(--secondary);
-        border-radius: 10px;
-        padding: 25px 20px;
-        margin-right: 1.5vw;
-        margin-top: 20px;
-        font-size: 25px;
-        transition: 0.3s;
-    }
-
-    .about-me-section .container .text-col {
-        font-size: 2rem;
-    }
-
-    .container {
-        display: flex;
+    /* Change nav-bar to column style */
+    header .nav-bar {
         flex-direction: column;
     }
-    
-    .about-me-section .container img {
+
+    /* Adjust width of nav buttons */
+    header button {
+        display: inline;
         width: 70vw;
-        object-fit: cover;
     }
 
+    /* Display text, then image of Bryan */
+    .about-me-container {
+        flex-direction: column-reverse;
+    }
+
+    /* Resize image to fit screen */
+    .about-me-img-container img {
+        width: 70vw;
+    }
+
+    
 }
-
-
 
 
 /* .image-track {
@@ -262,4 +215,4 @@ span {
     object-fit: cover;
     object-position: 100% center;
     user-select: none;
-} */
+} */ 
