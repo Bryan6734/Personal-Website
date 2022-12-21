@@ -1,4 +1,9 @@
 
+
+
+/* TESTING GITHUB BRANCHES v2 */
+
+
 /* Styling color variables */
 :root {
     --background: #1c1c1e;
@@ -77,6 +82,7 @@ header .name {
     font-size: 60px;
     letter-spacing: 1px;
 }
+
 
 header .bio {
     font-size: 2rem;
