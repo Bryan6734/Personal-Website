@@ -5,10 +5,309 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script defer src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Bryan's Page</title>
 </head>
 <body>
-    <header class="title-section">
+
+    <header>
+        <div class="content-container hidden">
+            <hr>
+            <h1 class="name">My <span>Portfolio</span></h1>
+            <p class="bio hidden">Scroll down to go through my programming journey. Click <a href="#end"><span>here</span></a> to skip to the end.</span></p>
+            <nav class="nav-bar">
+
+                <a href="index.html">
+                    <button>About Me</button>
+                </a>
+                <a href="portfolio.html">
+                    <button>My Portfolio</button>
+                </a>
+                <a href="contact_me.html">
+                    <button>Contact Me</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="timeline-wrapper">
+        <div class="timeline"></div>
+        <ul>
+
+            <!-- First Line of Code -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">First Line of Code</h1>
+                    <div class="logo-container">
+                        <div class="java-logo"></div>
+                        <p class="project-subtitle">November 2021: Computer Science 1</p>
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p>
+                        After being forced to switch half courses, I enrolled into <span>Computer Science 1</span> at Milton Academy and wrote my first line of code in Java.
+                        My only prior experience was through playing with Google's Inspect tool and small middle-school projects on Scratch.
+                    </p>
+                    <p class="center"><span class="first-line"></span></p>
+                    <div></div>
+                </div>
+            </li>
+
+            <!-- Pokemon Odyssey -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Pokemon Odyssey</h1>
+                    <div class="logo-container">
+                        <div class="java-logo"></div>
+                        <p class="project-subtitle">December 2021: Computer Science 1</p>
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p>
+                        For my Computer Science 1 project, I created a Pokemon Battle Simulator. Features include two selectable pokemon (Charizard and Blastoise), a special ability, custom moves, and a full turn-based battle system.
+                    </p>
+                    <p>Pokemon Odyssey won <span>Best Recreation</span> at Milton's Rookie Hackathon.</p>
+
+                    <div class="img-container">
+                        <img src="assets/pokemon-odyssey.gif" alt="">
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Learning Python -->
+            
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Learning Python</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">December 2021: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p class="project-desc">
+                        During December break, I began learning <span>Python</span> using YouTube and CodingBat, a free online resource with numerous introductory Python problems.
+                        I completed all the problems on CodingBat and started to work on personal projects.
+                    </p>
+                    <p class="center"><span class="first-line"></span></p>
+                    <div class="img-container">
+                        <img src="assets/coding-bat.png" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <!-- Recreating Wordle -->
+            
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Wordle & WordleBot</h1>
+                    <div class="logo-container">
+                        <div class="java-logo"></div>
+                        <p class="project-subtitle">February 2022: Computer Science 1</p>
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p>
+                        I re-created <span>Wordle</span> in Java. Features include ability to change number of guesses or word length, word validation, and improved class structuring.
+                    </p>
+                    <p>Then, I created a program called <span>WordleBot</span> that assists with guessing by filtering out specific words based on the information (red, green, yellow).
+                    </p>
+
+                    <div class="img-container">
+                        <img src="assets/wordle.png"alt="">
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Veritas AI -->
+            
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">K-Means Clustering in New York</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">March - April 2022: Veritas AI Scholars Program</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p>
+                        I completed the 10-week <span>Veritas AI Scholars Program</span> where I got to learn about different machine learning models from working data scientists.
+                    </p>
+                    <p>
+                        For my capstone project, I analyzed data from <span>New York Traffic Accidents</span> and determined the <span>10</span> most densely-packed collision hotspots using K-means clustering.
+                        Then, I used the <span>GMAPS Plotter API</span> to plot a map of every single accident and the notable hotspots, with each color representing a different borough.
+                    </p>
+
+                    <div class="img-container">
+                        <img src="assets/ny-clusters.png" alt="">
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Milton Academy Diversity Map -->
+            
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Milton Academy Diversity Map</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">July 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student addresses and plot a map of student locations.</p>
+                    <p>First, I used <span>Selenium</span>, a popular web-scraping library, to log into MyMilton and obtain student locations from the directory.</p>
+                    <p>Then, I stripped any identifying information and converted all locations to coordinates so that I could plot it using the <span>GMAPs Plotter API</span>.</p>
+
+                    <div class="img-container">
+                        <img src="assets/studnet_locs.png" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <!-- Milton Academy Calendar Integration -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Milton Academy Calendar Integration</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">July 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p>I used <span>Selenium</span> to log into MyMilton, obtain my schedule, and upload all my classes to <span>Google Calendar</span> using their API.</p>
+                    <p>This project was one of the hardest projects I completed, but I learned a lot about <span>parsing HTML tables</span> and <span>working with APIs.</span></p>
+
+                    <div class="img-container">
+                        <img src="assets/mymilton-calendar-demo.gif" alt="">
+                        <img src="assets/mymilton-calendar-example.png" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <!-- Spotipy Analyzer -->
+            
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Spotify Analyzer</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">August 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p>I used <span>Spotipy</span>, a popular wrapper for Spotify's API, to log into my Spotify account and collected data on my Liked Songs.</p>
+                    <p>On the left, I created a program that creates playlists with all the songs I had liked for a particular month.</p>
+                    <p>On the right, I analyzed the release dates of all my Liked Songs and plotted them on a graph using <span>matplotlib</span>. 
+                    Interestingly, Spotify doesn't store individual song release dates, but rather album release dates.</p>
+                    <p></p>
+                    <div class="img-container">
+                        <img src="assets/spotipy-analyzer.gif" alt="">
+                        <img src="assets/spotify-years.PNG" alt="">
+                    </div>
+                </div>
+            </li>
+
+
+
+            <!-- Milton Academy Face Guesser -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Milton Academy Face Guessing Game</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">October 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student faces and create a face guessing game for teachers.</p>
+                    <p>Players are given a face and must guess the name of the person being displayed.</p>
+
+                    <div class="img-container">
+                        <img src="assets/face-guesser.gif" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <!-- MANIM -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">MANIM Library</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">November 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+
+                    <p>I used <span>MANIM</span>, the Python animation library used by YouTuber <span styke="color: #74bfe2">3Blue</span><span style="color: #8b623a">1Brown</span>, to create a short animation about finding the line of best fit (iterative linear regression).
+
+                    <div class="img-container">
+                        <img src="assets/manim-demo.gif" alt="">
+                    </div>
+                </div>
+            </li>
+            <!-- iMessage Sentiment Analysis -->
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">iMessage NLTK Sentiment Analysis</h1>
+                    <div class="logo-container">
+                        <div class="py-logo"></div>
+                        <p class="project-subtitle">December 2022: Personal Endeavor</p>
+                    </div>
+                </div>
+                
+                <div class="desc-container">
+
+                    <p>I scraped the <span>iMessage chat databases</span> on my computer to perform NLTK sentiment analysis and count word frequencies.</p>
+                    <p>On the left, I used a pre-trained NLTK (natural language toolkit) model to determine how positive/negative my texts were with my sister.</p>
+                    <p>On the right, I counted raw word frequencies by month.</p>
+
+                    <div class="img-container">
+                        <img src="assets/imessage-nltk.png" alt="">
+                        <img src="assets/imessage-frequencies.png" alt="">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var typed = new Typed(".first-line", {
+            strings: [
+                "System.out.println(\"Hello World!\")"
+            ],
+            typeSpeed: 50,
+            backSpeed: 40,
+            backDelay: 2000, 
+            loop: true
+        });
+    </script>
+
+    <div id="end"></div>
+
+
+    
+    <!--     
+        <header class="title-section">
         <hr>
         <h1 class="title-h1">My <span class="name-bold">Programming</span> Portfolio</h1>
         <p class="title-p">A collection of my programming projects.</p>
@@ -57,7 +356,7 @@
 
 
     </div>
-
+ -->
 
     
 </body>
