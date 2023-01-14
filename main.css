@@ -1,4 +1,4 @@
-/* Styling color variables */
+
 :root {
     --background: #1c1c1e;
     --background-darker: #141414;
@@ -101,7 +101,7 @@ header button {
     padding: 15px 25px;
     font-size: 1.25rem;
     font-weight: 400;
-    transition: 0.3s;
+
 }
 
 header button:hover {
@@ -185,13 +185,13 @@ footer p {
 .timeline-wrapper .timeline {
     position: sticky;
 	top: 25vh;
-    height: 75vh;
+    bottom: 0;
+    height: 100vh;
     width: 0;
     margin-left: 15vw;
     border: 3px var(--secondary) solid;  
     border-radius: 3px;
-    /* border-width: 1px; */
-    /* background-color: var(--secondary); */
+    z-index: -1;
 }
 
 ul {
