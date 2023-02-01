@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <script defer src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <title>Bryan's Page</title>
+    <title>Bryan Sukidi</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         <div class="content-container hidden">
             <hr>
             <h1 class="name">My <span>Portfolio</span></h1>
-            <p class="bio hidden">Scroll down to go through my programming journey. Click <a href="#end"><span>here</span></a> to skip to the end.</span></p>
+            <p class="bio hidden">Scroll down to go through my programming journey. Click <a href="#juicy"><span>here</span></a> to skip to the good stuff.</p>
             <nav class="nav-bar">
 
                 <a href="index.html">
@@ -23,6 +23,10 @@
                 </a>
                 <a href="portfolio.html">
                     <button>My Portfolio</button>
+                </a>
+
+                <a target="_blank" href="https://github.com/Bryan6734">
+                    <button>My GitHub</button>
                 </a>
                 <!-- <a href="contact_me.html">
                     <button>My Skills</button>
@@ -70,9 +74,12 @@
 
                 <div class="desc-container">
                     <p>
-                        For my Computer Science 1 project, I created a Pokemon Battle Simulator. Features include two selectable pokemon (Charizard and Blastoise), a special ability, custom moves, and a full turn-based battle system.
+                        For my Computer Science 1 project, I created a <span>Pokemon Battle Simulator</span>. Features include two selectable pokemon (Charizard and Blastoise), a special ability, custom moves, and a full turn-based battle system.
                     </p>
-                    <p>Pokemon Odyssey won <span>Best Recreation</span> at Milton's Rookie Hackathon.</p>
+
+                    <p><span class="skill">Skills Involved:</span> Java object-oriented programming; Java Graphics2D for rendering; image/GIF manipulation; basic structure and gameflow.</p>
+
+
 
                     <div class="img-container">
                         <img src="assets/pokemon-odyssey.gif" alt="">
@@ -96,6 +103,9 @@
                         During December break, I began learning <span>Python</span> using YouTube and CodingBat, a free online resource with numerous introductory Python problems.
                         I completed all the problems on CodingBat and started to work on personal projects.
                     </p>
+
+                    <p><span class="skill">Skills Involved:</span> Python; string parsing; logic statements and conditionals; lists and dictionaries.</p>
+
                     <p class="center"><span class="first-line"></span></p>
                     <div class="img-container">
                         <img src="assets/coding-bat.png" alt="">
@@ -120,6 +130,8 @@
                     </p>
                     <p>Then, I created a program called <span>WordleBot</span> that assists with guessing by filtering out specific words based on the information (red, green, yellow).
                     </p>
+                    
+                    <p><span class="skill">Skills Involved:</span> String parsing for validation; text-file reading and writing; lambda functions for filtering; Java Graphics2D for rendering</p>
 
                     <div class="img-container">
                         <img src="assets/wordle.png"alt="">
@@ -129,7 +141,7 @@
             
             <!-- Veritas AI -->
             
-            <li class="card-hidden">
+            <li class="card-hidden" id="juicy">
                 <div class="title-container">
                     <h1 class="project-title">K-Means Clustering in New York</h1>
                     <div class="logo-container">
@@ -146,6 +158,8 @@
                         For my capstone project, I analyzed data from <span>New York Traffic Accidents</span> and determined the <span>10</span> most densely-packed collision hotspots using K-means clustering.
                         Then, I used the <span>GMAPS Plotter API</span> to plot a map of every single accident and the notable hotspots, with each color representing a different borough.
                     </p>
+
+                    <p><span class="skill">Skills Involved:</span> Python; numpy and pandas; matplotlib; sklearn K-Means clustering; Google Maps Plotter API.</p>
 
                     <div class="img-container">
                         <img src="assets/ny-clusters.png" alt="">
@@ -165,9 +179,9 @@
                 </div>
                 
                 <div class="desc-container">
-                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student addresses and plot a map of student locations.</p>
-                    <p>First, I used <span>Selenium</span>, a popular web-scraping library, to log into MyMilton and obtain student locations from the directory.</p>
-                    <p>Then, I stripped any identifying information and converted all locations to coordinates so that I could plot it using the <span>GMAPs Plotter API</span>.</p>
+                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student addresses and plot a map of student locations. First, I used <span>Selenium</span>, a popular web-scraping library, to log into MyMilton and obtain student locations from the directory. Then, I stripped any identifying information and converted all locations to coordinates so that I could plot it using the <span>GMAPs Plotter API</span>.</p>
+
+                    <p><span class="skill">Skills Involved:</span> Selenium library for web-scraping; Nominatim API for geocoding; Google Maps Plotter API; HTML parsing and table filtering.</p>
 
                     <div class="img-container">
                         <img src="assets/studnet_locs.png" alt="">
@@ -189,6 +203,8 @@
                 <div class="desc-container">
                     <p>I used <span>Selenium</span> to log into MyMilton, obtain my schedule, and upload all my classes to <span>Google Calendar</span> using their API.</p>
                     <p>This project was one of the hardest projects I completed, but I learned a lot about <span>parsing HTML tables</span> and <span>working with APIs.</span></p>
+
+                    <p><span class="skill">Skills Involved:</span> Selenium library for web-scraping; Google Calender API for events; Python's datetime module for time; in-depth HTML table parsing.</p>
 
                     <div class="img-container">
                         <img src="assets/mymilton-calendar-demo.gif" alt="">
@@ -213,7 +229,9 @@
                     <p>On the left, I created a program that creates playlists with all the songs I had liked for a particular month.</p>
                     <p>On the right, I analyzed the release dates of all my Liked Songs and plotted them on a graph using <span>matplotlib</span>. 
                     Interestingly, Spotify doesn't store individual song release dates, but rather album release dates.</p>
-                    <p></p>
+
+                    <p><span class="skill">Skills Involved:</span> Spotify API; matplotlib; JSON parsing.</p>
+
                     <div class="img-container">
                         <img src="assets/spotipy-analyzer.gif" alt="">
                         <img src="assets/spotify-years.PNG" alt="">
@@ -235,11 +253,37 @@
                 </div>
                 
                 <div class="desc-container">
-                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student faces and create a face guessing game for teachers.</p>
-                    <p>Players are given a face and must guess the name of the person being displayed.</p>
+                    <p>I scraped data from the <span>MyMilton Student Directory</span> to obtain student faces and create a face guessing game for students and teachers.</p>
+                    <p>Click <a href="https://bryan6734.github.io/Milton-Faces-Quiz/" target="_blank"><span>here</span></a> to navigate to the website.</p>
+
+                    <p><span class="skill">Skills Involved:</span> Selenium library for web-scraping; JSON reading/writing to store data; HTML and CSS for website frontend; JavaScript for backend quiz</p>
 
                     <div class="img-container">
-                        <img src="assets/face-guesser.gif" alt="">
+                        <img src="assets/mymilton-face-guesser-demo.gif" alt="">
+                    </div>
+                </div>
+            </li>
+
+            <li class="card-hidden">
+                <div class="title-container">
+                    <h1 class="project-title">Chomp</h1>
+                    <div class="logo-container">
+                        <div class="java-logo"></div>
+                        <p class="project-subtitle">November 2022: Computer Science 2</p>
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p>
+                        I coded a program that can play the game of <span>Chomp</span> and consistently pick the <span>winning move</span>. Instead of recalculating winning and losing boards on every load, I ran my program once and serialized a HashMap containing all winning combos to achieve an O(1) solution.
+                    </p>
+
+                    <p><span class="skill">Skills Involved:</span> Pure logic; Java ArrayLists and HashMaps for storing winning/losing boards; O(n) notation for time complexity.</p>
+
+
+
+                    <div class="img-container">
+                        <img src="assets/chomp-demo.gif" alt="">
                     </div>
                 </div>
             </li>
@@ -259,6 +303,7 @@
 
                     <p>I used <span>MANIM</span>, the Python animation library used by YouTuber <span styke="color: #74bfe2">3Blue</span><span style="color: #8b623a">1Brown</span>, to create a short animation about finding the line of best fit (iterative linear regression).
 
+                    <p><span class="skill">Skills Involved:</span> MANIM library for math animations; Python knowledge; LATEX math formatting.</p>
                     <div class="img-container">
                         <img src="assets/manim-demo.gif" alt="">
                     </div>
@@ -281,6 +326,8 @@
                     <p>On the left, I used a pre-trained NLTK (natural language toolkit) model to determine how positive/negative my texts were with my sister.</p>
                     <p>On the right, I counted raw word frequencies by month.</p>
 
+                    <p><span class="skill">Skills Involved:</span> NLTK library for natural language processing; py-iMessage library for collecting local iMessage texts; matplotlib for graphing.</p>
+
                     <div class="img-container">
                         <img src="assets/imessage-nltk.png" alt="">
                         <img src="assets/imessage-frequencies.png" alt="">
@@ -292,7 +339,7 @@
 
             <li class="card-hidden">
                 <div class="title-container">
-                    <h1 class="project-title">Personal Website</h1>
+                    <h1 class="project-title">bryansukidi.com</h1>
                     <div class="logo-container">
                         <div class="py-logo"></div>
                         <p class="project-subtitle">December 2022: Personal Endeavor</p>
@@ -302,10 +349,13 @@
                 <div class="desc-container">
 
 
-                    <p>I coded a <span>personal website</span> using HTML, CSS, and JS.</p>
+                    <p>I coded a <span>personal website</span> using HTML, CSS, and JS, hosted using GitHub pages.</p>
+                    <p>The website source code can be found on my GitHub.</p>
+
+                    <p><span class="skill">Skills Involved:</span> HTML and CSS for frontend design; JavaScript for backend and animations; IntersectionObserver for viewport-based animations.</p>
 
                     <div class="img-container">
-                        <img src="assets/website-screenshot.png" alt="">
+                        <img src="assets/website-demo.gif" alt="">
                     </div>
                 </div>
             </li>

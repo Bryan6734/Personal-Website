@@ -42,7 +42,7 @@ a:link{
 
 /* Creates blue accent lines for all <hr> elements */
 hr {
-    background-color: var(--secondary);
+    background-image: linear-gradient(120deg, #88b6ff 0%, #c5e8f8 100%);
     margin: 0;
     height: 5px;
     border: none;
@@ -50,10 +50,36 @@ hr {
 
   }
 
+
+
 /* Colors all emphasized text with blue. */
-span {
-    color: var(--secondary);
+span:not(.c) {
+    background-image: linear-gradient(120deg, #88b6ff 0%, #c5e8f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
+
+span.skill {
+    font-weight: 600;
+
+}
+
+span.c {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+span.c:hover {
+
+    font-weight: 900;
+
+
+}
+
+
 
 /* Parent header for landing page with size of viewport */
 header {
@@ -84,6 +110,8 @@ header .bio {
     line-height: 40px;
     font-weight: 400;
     min-height: 75px;
+
+
 }
 
 header .nav-bar{
@@ -101,12 +129,13 @@ header button {
     padding: 15px 25px;
     font-size: 1.25rem;
     font-weight: 400;
-
+    transition: 0.3s;
 }
 
 header button:hover {
     cursor: pointer;
     background-color: var(--quarternary);
+    transform: scale(1.2);
 }
 
 /* Styling for Union Square parallax image */
@@ -270,6 +299,12 @@ li .img-container img {
     object-fit:scale-down;
     border: 3px var(--primary) solid;
     overflow-x: scroll;
+    transition: 0.2s;
+}
+
+
+li .img-container img:hover {
+    transform: scale(1.2);
 }
 
 li .first-line, li p.center {
@@ -290,7 +325,6 @@ li .first-line, li p.center {
     transform: translateX(0px);
 }
 
-
 .card-hidden {
     opacity: 1;
     transition: all 0.5s;
@@ -299,6 +333,7 @@ li .first-line, li p.center {
 .card-show {
     opacity: 0;
 }
+
 
 
 
