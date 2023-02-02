@@ -100,7 +100,9 @@ header .content-container {
 }
 
 header .name {
-    font-size: 60px;
+
+    /* font-size: 3.75rem; */
+    font-size: clamp(2.6rem, 8vw, 3.75rem);
     letter-spacing: 1px;
 }
 
@@ -140,13 +142,12 @@ header button:hover {
 /* Styling for Union Square parallax image */
 .parallax{
     width: 100vw;
-    background-image: url("assets/unionsquare.jpeg");
     height: 50vh;
+    background-image: url("assets/unionsquare.jpeg");
     background-attachment: fixed;
-    background-position: center 0%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 /* Default styling for all section elements */
