@@ -1,3 +1,13 @@
+
+
+
+function playSound(noteId){
+  let note = document.getElementById(noteId);
+  note.currentTime = 0;
+  note.play();
+}
+
+
 const headerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
