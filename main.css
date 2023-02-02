@@ -111,7 +111,6 @@ header .bio {
     font-weight: 400;
     min-height: 75px;
 
-
 }
 
 header .nav-bar{
@@ -352,7 +351,6 @@ li .first-line, li p.center {
         max-width: 100%;
         min-height: 200px;
         max-height: 300px;
-        overflow: scroll;
         text-overflow: ellipsis;
     }
 
