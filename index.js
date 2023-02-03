@@ -1,5 +1,5 @@
 
-if (window.location.pathname == "/index.html"){
+if (window.location.pathname == "/index.html" || window.location.pathname == "/"){
   gitpin("https://api.github.com/repos/Bryan6734/MyMilton-Map-Geocoder", "repo", document.getElementById("map-geocoder-ID"));
   gitpin("https://api.github.com/repos/Bryan6734/Milton-Faces-Quiz", "repo", document.getElementById("faces-quiz-ID"));
   gitpin("https://api.github.com/repos/Bryan6734/Personal-Website", "repo", document.getElementById("personal-website-ID"));
