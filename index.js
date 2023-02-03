@@ -1,11 +1,19 @@
 
-
-
+if (window.location.pathname == "/index.html"){
+  gitpin("https://api.github.com/repos/Bryan6734/MyMilton-Map-Geocoder", "repo", document.getElementById("map-geocoder-ID"));
+  gitpin("https://api.github.com/repos/Bryan6734/Milton-Faces-Quiz", "repo", document.getElementById("faces-quiz-ID"));
+  gitpin("https://api.github.com/repos/Bryan6734/Personal-Website", "repo", document.getElementById("personal-website-ID"));
+  gitpin("https://api.github.com/repos/Bryan6734/NY-Collisions-Clustering", "repo", document.getElementById("collision-clustering-ID"));
+  gitpin("https://api.github.com/repos/Bryan6734/MyMilton-Calendar-Integration", "repo", document.getElementById("calendar-integration-ID"));
+  gitpin("https://api.github.com/repos/Bryan6734/Graphing-Calculator", "repo", document.getElementById("graphing-ID"));
+}
+  
 function playSound(noteId){
   let note = document.getElementById(noteId);
   note.currentTime = 0;
   note.play();
 }
+
 
 
 const headerObserver = new IntersectionObserver((entries) => {
@@ -41,7 +49,7 @@ const timelineObserver = new IntersectionObserver((entries) => {
     }
   })
 }, {
-  rootMargin: "50% 0% -130% 0%",
+  rootMargin: "50% 0% -145% 0%",
   threshold: 0.01,
   delay: "100"
 })

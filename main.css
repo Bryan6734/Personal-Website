@@ -1,11 +1,13 @@
 
 :root {
     --background: #1c1c1e;
-    --background-darker: #141414;
+    --background-darker: #121212;
     --primary: #f0f0f0;
     --secondary: #7ba2cc;
     --tertiary: #989899;
     --quarternary: #5a5a5e;
+
+    --border-color: #302c2c;
 
   }
 
@@ -102,7 +104,7 @@ header .content-container {
 header .name {
 
     /* font-size: 3.75rem; */
-    font-size: clamp(2.6rem, 8vw, 3.75rem);
+    font-size: clamp(3.25rem, 8vw, 3.75rem);
     letter-spacing: 1px;
 }
 
@@ -125,12 +127,13 @@ header .nav-bar{
 header button {
     background-color: var(--background);
     display: flex;
-    outline: 2px solid var(--secondary);
+    outline: 3px solid var(--secondary);
     border-radius: 5px;
     padding: 15px 25px;
     font-size: 1.25rem;
     font-weight: 400;
     transition: 0.3s;
+    border: none;
 }
 
 header button:hover {
@@ -162,16 +165,18 @@ section h1 {
     font-size: 2.5rem;
 }
 
+.about-me-section {
+    padding: 0 5vw 5vh;
+}
 
 .about-me-container {
     display: flex;
-    padding: 0 5vw 5vh;
     gap: 5vw;
 }
 
 /* Font size for text */
 .about-me-text-container {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.5rem;
 }
 
@@ -189,6 +194,23 @@ section h1 {
     height: 100%;
     object-fit: cover;
 }
+
+
+.skills-section {
+    padding: 0 5vw 5vh;
+    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-container {
+    width: 60%;
+}
+
+.music-container {
+    width: 40%;
+}
+
 
 footer {
     background-color: var(--background-darker);
@@ -208,7 +230,6 @@ footer p {
 
 .timeline-wrapper {
     width: 100vw;
-
 }
 
 .timeline-wrapper .timeline {
@@ -221,6 +242,15 @@ footer p {
     border: 3px var(--secondary) solid;  
     border-radius: 3px;
     z-index: -1;
+}
+
+.timeline-wrapper .timeline-dog {
+    position: sticky;
+    top: 40vh;
+    width: 8vw;
+    margin-left: 7.1vw;
+    /* animation-play-state: paused; */
+
 }
 
 ul {
@@ -236,6 +266,7 @@ li {
     display: flex;
     flex-direction: column;
     padding-right: 5vw;
+;
 
 }
 
@@ -375,4 +406,95 @@ li .first-line, li p.center {
     .about-me-img-container img {
         width: 70vw;
     }   
+
+    .skills-section {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+    
+    .music-container {
+        width: 100%;
+    }
+    
+}
+
+
+/* For github repositories */
+
+.repository-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    height: 500px;
+    overflow: auto;
+
+}
+
+.repository-list svg {
+    position: fixed;
+    display: none;
+
+ }
+
+  .repository-list a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    background-image: linear-gradient(120deg, #88b6ff 0%, #c5e8f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .box {
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .box div {
+    margin: 5px;
+  }
+
+  .box p {
+    color: white;
+
+  }
+
+  .controls {
+    display: flex;
+  }
+
+  .horizontalspace {
+    flex-grow: 1;
+  }
+
+  .stats {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .buttons * {
+    margin-left: 5px;
+  }
+
+  .stats *:not(svg) {
+    margin-right: 5px;
+  }
+
+  .repository-list ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
 }
