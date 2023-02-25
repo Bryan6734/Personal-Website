@@ -172,6 +172,7 @@ section h1 {
 .about-me-container {
     display: flex;
     gap: 5vw;
+
 }
 
 /* Font size for text */
@@ -192,7 +193,8 @@ section h1 {
 .about-me-img-container img {
     width: 25vw;
     height: 100%;
-    object-fit: cover;
+    object-fit:scale-down;
+    aspect-ratio: 5 / 7;
 }
 
 
@@ -432,6 +434,7 @@ li .first-line, li p.center {
     height: 500px;
     overflow: auto;
 
+
 }
 
 .repository-list svg {
@@ -441,9 +444,16 @@ li .first-line, li p.center {
  }
 
   .repository-list a {
+
+
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
+
+  }
+
+  .repository-list h4 {
+    margin: 20px 0px 0px 0px;
 
     background-image: linear-gradient(120deg, #88b6ff 0%, #c5e8f8 100%);
     background-clip: text;
@@ -451,12 +461,18 @@ li .first-line, li p.center {
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
   }
 
   .box {
     border: 2px solid var(--border-color);
     border-radius: 15px;
     padding: 20px;
+    padding-top: 5px;
   }
 
   .box div {

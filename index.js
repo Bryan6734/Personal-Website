@@ -15,7 +15,6 @@ function playSound(noteId){
 }
 
 
-
 const headerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
