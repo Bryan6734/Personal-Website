@@ -153,6 +153,8 @@ header button:hover {
     background-size: cover;
 }
 
+
+
 /* Default styling for all section elements */
 section {
     /* padding: 0 15vw 0; */
@@ -419,6 +421,13 @@ li .first-line, li p.center {
     
     .music-container {
         width: 100%;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
 }
