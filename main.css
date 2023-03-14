@@ -127,13 +127,13 @@ header .nav-bar{
 header button {
     background-color: var(--background);
     display: flex;
-    outline: 3px solid var(--secondary);
+    border: 3px solid var(--secondary);
     border-radius: 5px;
+    outline: none;
     padding: 15px 25px;
     font-size: 1.25rem;
     font-weight: 400;
     transition: 0.3s;
-    border: none;
 }
 
 header button:hover {
@@ -245,6 +245,7 @@ footer p {
     margin-left: 15vw;
     border: 3px var(--secondary) solid;  
     border-radius: 3px;
+    outline: none;
     z-index: -1;
 }
 
@@ -477,18 +478,19 @@ li .first-line, li p.center {
 
   }
 
-  .box {
+  .card {
     border: 2px solid var(--border-color);
     border-radius: 15px;
+    outline: none;
     padding: 20px;
     padding-top: 5px;
   }
 
-  .box div {
+  .card div {
     margin: 5px;
   }
 
-  .box p {
+  .card p {
     color: white;
 
   }
