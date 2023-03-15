@@ -352,26 +352,21 @@ li .first-line, li p.center {
 
 .hidden {
     opacity: 0;
-    transform: translateX(-500px);
-    transition: all 1s;
+    transition: all 1.25s;
 }
 
 .show {
     opacity: 1;
-    transform: translateX(0px);
 }
 
 .card-hidden {
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 1.25s;
 }
 
 .card-show {
     opacity: 0;
 }
-
-
-
 
 
 
