@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
 
   function generateCard(cardObj) {
@@ -11,16 +10,6 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
       <div class="card-title">
         <a href="${repoLink}"><h4><svg></svg>${repoName}</h4></a>
       </div>
-=======
-if (window.location.pathname == "/index.html" || window.location.pathname == "/"){
-  gitpin("https://api.github.com/repos/Bryan6734/Milton-Globe-Visualizer", "repo", document.getElementById("map-geocoder-ID"));
-  gitpin("https://api.github.com/repos/Bryan6734/Milton-Faces-Quiz", "repo", document.getElementById("faces-quiz-ID"));
-  gitpin("https://api.github.com/repos/Bryan6734/Personal-Website", "repo", document.getElementById("personal-website-ID"));
-  gitpin("https://api.github.com/repos/Bryan6734/NY-Collisions-Clustering", "repo", document.getElementById("collision-clustering-ID"));
-  gitpin("https://api.github.com/repos/Bryan6734/MyMilton-Calendar-Integration", "repo", document.getElementById("calendar-integration-ID"));
-  gitpin("https://api.github.com/repos/Bryan6734/Graphing-Calculator", "repo", document.getElementById("graphing-ID"));
-}
->>>>>>> 7015a38 (Globe visualization)
   
       <div class="card-content">
         <p>${repoDescription}</p>
