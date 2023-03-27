@@ -196,7 +196,8 @@ section h1 {
     width: 25vw;
     height: 100%;
     object-fit:scale-down;
-    aspect-ratio: 5 / 7;
+    /* aspect-ratio: 5 / 7; */
+
 }
 
 
@@ -367,9 +368,6 @@ li .first-line, li p.center {
 .card-show {
     opacity: 0;
 }
-
-
-
 
 @media screen and (max-width: 709px){
 
