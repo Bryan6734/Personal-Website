@@ -1,118 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <script defer src="index.js"></script>
-    <link rel="icon" href="/assets/CodeIcon.png">
+    <link rel="icon" href="/assets/CodeIcon.png" />
     <title>Bryan Sukidi</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://gitlist.himdek.com/GitHubList.js"></script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <audio src="./audio/piano-mp3_A3.mp3" id="a3"></audio>
     <audio src="./audio/piano-mp3_B3.mp3" id="b3"></audio>
     <audio src="/audio/piano-mp3_D4.mp3" id="d4"></audio>
     <audio src="./audio/piano-mp3_G3.mp3" id="g3"></audio>
 
     <header>
-        <div class="content-container">
-            <hr>
-            <h1 class="name hidden">Hello! I'm <span>
-                <span class="c" onmouseover="playSound('d4')">B</span><span class="c" onmouseover="playSound('b3')">r</span><span class="c" onmouseover="playSound('b3')">y</span><span class="c" onmouseover="playSound('a3')">a</span><span class="c" onmouseover="playSound('g3')">n</span>
-                <span class="c" onmouseover="playSound('d4')">S</span><span class="c" onmouseover="playSound('d4')">u</span><span class="c" onmouseover="playSound('b3')">k</span><span class="c" onmouseover="playSound('a3')">i</span><span class="c" onmouseover="playSound('b3')">d</span><span class="c" onmouseover="playSound('a3')">i</span>.
-            </h1>
-            <p class="bio hidden">I'm a 17-year-old student and I love <span class="auto-type"></span></p>
-            <nav class="nav-bar">
+      <div class="content-container">
+        <hr />
+        <h1 class="name hidden">
+          Hello! I'm
+          <span
+            ><span class="c" onmouseover="playSound('d4')">B</span><span class="c" onmouseover="playSound('b3')">r</span
+            ><span class="c" onmouseover="playSound('b3')">y</span><span class="c" onmouseover="playSound('a3')">a</span
+            ><span class="c" onmouseover="playSound('g3')">n</span> <span class="c" onmouseover="playSound('d4')">S</span
+            ><span class="c" onmouseover="playSound('d4')">u</span><span class="c" onmouseover="playSound('b3')">k</span
+            ><span class="c" onmouseover="playSound('a3')">i</span><span class="c" onmouseover="playSound('b3')">d</span
+            ><span class="c" onmouseover="playSound('a3')">i</span>.
+          </span>
+        </h1>
+        <p class="bio hidden">I'm a 17-year-old student and I love <span class="auto-type"></span></p>
+        <nav class="nav-bar">
+          <a href="#about-me" class="hidden">
+            <button>About Me</button>
+          </a>
+          <a href="portfolio.html" class="hidden">
+            <button>My Portfolio</button>
+          </a>
 
-                <a href="#about-me" class="hidden">
-                    <button>About Me</button>
-                </a>
-                <a href="portfolio.html" class="hidden">
-                    <button>My Portfolio</button>
-                </a>
-
-                <a target="_blank" href="https://github.com/Bryan6734" class="hidden">
-                    <button>My GitHub</button>
-                </a>
-          
-            </nav>
-        </div>
+          <a target="_blank" href="https://github.com/Bryan6734" class="hidden">
+            <button>My GitHub</button>
+          </a>
+        </nav>
+      </div>
     </header>
 
-    <div class="parallax"></div>   
+    <div class="parallax"></div>
 
     <section class="about-me-section" id="about-me">
-        
-        <div class="about-me-container">
-    
-            <div class="about-me-img-container hidden">
-                <img src="assets/bryan_sukidi.png" alt="">
-            </div>
-            
-            <div class="about-me-text-container hidden">
-                <hr>
-                <h1 class="about-me-heading">About Me</h1>
-                <p class="hidden">
-                    Hello! My name is <span>Bryan Sukidi.</span> I'm a junior studying at <span>Milton Academy,</span> a boarding school in New England. I was raised in Somerville Massachusetts after my parents immigrated to the U.S. in 2003. Once my father completed his studies, both of my parents returned to <span>Indonesia</span> while my sister and I continue to study in America.</p>
-                <p class="hidden">
-                    The advent of <span>artificial intelligence</span> is one of humanity's greatest feats. As we praise the latest breakthroughs in machine learning, we must also remember that AI continues to reflect many of the longstanding <span>biases</span> found throughout society.
-                </p>
-                <p class="hidden">
-                    I'm interested in studying <span>computer science</span> to learn more about how we can improve our models to create fairer, more equitable systems. Apart from that, I love conversations about religion, music, literature, etc. If you'd like to get into contact, feel free to email me at <span>bryan_sukidi24@milton.edu</span>. Thanks for reading!
-                </p>
-                    
-            </div>
+      <div class="about-me-container">
+        <div class="about-me-img-container hidden">
+          <img src="assets/bryan_sukidi.png" alt="" />
         </div>
+
+        <div class="about-me-text-container hidden">
+          <hr />
+          <h1 class="about-me-heading">About Me</h1>
+          <p class="hidden">
+            Hello! My name is <span>Bryan Sukidi.</span> I'm a junior studying at <span>Milton Academy,</span> a boarding school in New England. I was
+            raised in Somerville Massachusetts after my parents immigrated to the U.S. in 2003. Once my father completed his studies, both of my
+            parents returned to <span>Indonesia</span> while my sister and I continue to study in America.
+          </p>
+          <p class="hidden">
+            I love using <span>programming</span> to create tools that make people's lives easier! I'm interested in <span>machine learning</span> to
+            learn more about how we can design safer, more equitable systems. I also have experience in <span>frontend</span> and
+            <span>backend</span> web development.
+          </p>
+          <p class="hidden">
+            Apart from that, I love conversations about religion, music, literature, and more. If you'd like to get into contact, feel free to email
+            me at <span>bryan_sukidi24@milton.edu</span>. Thanks for reading!
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="skills-section hidden">
+      <div class="projects-container">
+        <hr />
+        <h1>My Repositories</h1>
 
-        <div class="projects-container">
-            <hr>
-            <h1>My Repositories</h1>
+        <div class="repository-list" id="repository-list"></div>
+      </div>
 
-            <div class="repository-list" id="repository-list">
-
-            </div>
-        
-        </div>
-        
-        <div class="music-container">
-            <hr>
-            <h1>My Music</h1>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2b8GzhbiXPZKDh5jx7F3Zq?utm_source=generator&theme=0" width="100%" height="500px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-
+      <div class="skills-container">
+        <hr />
+        <h1>My Favorites</h1>
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/2b8GzhbiXPZKDh5jx7F3Zq?utm_source=generator&theme=0"
+          width="100%"
+          height="500px"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
     </section>
 
     <footer>
-        <p>Created by Bryan Sukidi with HTML, CSS, and JS (2022)</p>
+      <p>Created by Bryan Sukidi with HTML, CSS, and JS (2022)</p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: [
-                "programming.",
-                "building websites.",
-                "playing guitar and drums.", 
-                "creating crosswords.",
-                "rock climbing.",
-         
-            ],
-            typeSpeed: 50,
-            backSpeed: 40,
-            backDelay: 2000, 
-            loop: true
-        });
+      var typed = new Typed(".auto-type", {
+        strings: ["programming.", "building websites.", "playing guitar and drums.", "creating crosswords.", "rock climbing."],
+        typeSpeed: 50,
+        backSpeed: 40,
+        backDelay: 2000,
+        loop: true,
+      });
     </script>
-    
-</body>
+  </body>
 </html>
+
+<!-- 
+
+              The advent of <span>artificial intelligence</span> is one of humanity's greatest feats. As we praise the latest breakthroughs in machine
+            learning, we must also remember that AI continues to reflect many of the longstanding <span>biases</span> found throughout society.
+ -->
+
+<!-- 
+          <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/2b8GzhbiXPZKDh5jx7F3Zq?utm_source=generator&theme=0"
+          width="100%"
+          height="500px"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+  -->
+
+<!-- <ul class="skills">
+  <li>React</li>
+  <li>Flask</li>
+  <li>HTML / CSS</li>
+
+  <li>Python</li>
+  <li>Java</li>
+  <li>JavaScript</li>
+
+  <li>Google OAuth</li>
+  <li>Numpy & Pandas</li>
+  <li>Three.js</li>
+  <li>Selenium Web Scraping</li>
+  <li>Nest.js & MongoDB</li>
+</ul> -->
